@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_clicklabs"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/text_view"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/text_refral_code"
+        android:textSize="@dimen/font_xxlarge"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_share_refral_whats_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shape"
+        android:drawablePadding="@dimen/padding_normal"
+        android:drawableStart="@drawable/ic_sms_black_24dp"
+        android:paddingEnd="@dimen/padding_normal"
+        android:paddingStart="@dimen/padding_normal"
+        android:text="@string/btn_Share_refral_whats_app"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_share_refal_via_others"
+        style="@style/text_view_drawer"
+        android:layout_gravity="center"
+        android:text="@string/text_share_with_others"
+
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>
