@@ -59,7 +59,7 @@ public class MyApplication extends Application {
         Paper.init(this);
         Foreground.init(this);
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/Dosis-Medium.ttf")
+                .setDefaultFontPath("fonts/Avenir.ttc")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );

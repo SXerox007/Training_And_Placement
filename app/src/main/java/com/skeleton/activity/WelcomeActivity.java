@@ -337,7 +337,7 @@ public class WelcomeActivity extends BaseActivity implements CompoundButton.OnCh
                         public void success(final ResponseSocialLogin responseSocialLogin) {
                             CommonData.saveAccessToken("bearer "
                                     + responseSocialLogin.getData().getToken());
-                            startActivity(new Intent(WelcomeActivity.this, CarDetailActivity.class));
+                            startActivity(new Intent(WelcomeActivity.this, HomeActivity.class));
                         }
 
                         @Override
@@ -365,7 +365,7 @@ public class WelcomeActivity extends BaseActivity implements CompoundButton.OnCh
                             CommonData.saveAccessToken("bearer "
                                     + responseSocialLogin.getData().getToken());
                             Paper.book().write(SOCIAL_LOGIN_BY, GOOGLE);
-                            startActivity(new Intent(WelcomeActivity.this, CarDetailActivity.class));
+                            startActivity(new Intent(WelcomeActivity.this, HomeActivity.class));
                         }
 
                         @Override

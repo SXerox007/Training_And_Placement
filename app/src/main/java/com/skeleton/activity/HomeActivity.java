@@ -81,14 +81,14 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
     private static final double MLAT1 = 19.0760;
     private static final double MLAN1 = 72.8777;
     //shimla
-    private static final double MLAT2 = 31.1048;
-    private static final double MLAN2 = 77.1734;
+    private static final double MLAT2 = 12.2958;
+    private static final double MLAN2 = 76.6394;
     //chandigarh
-    private static final double MLAT3 = 30.7333;
-    private static final double MLAN3 = 76.7794;
+    private static final double MLAT3 = 13.0827;
+    private static final double MLAN3 = 80.2707;
     //Hydrabad
-    private static final double MLAT4 = 17.3850;
-    private static final double MLAN4 = 78.4867;
+    private static final double MLAT4 = 9.9312;
+    private static final double MLAN4 = 76.2673;
     private static final String TAG = "HomeActivity";
     private DrawerLayout drawer;
     private TextView tvTitle;
@@ -358,6 +358,21 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(india));
         googleMap.animateCamera(CameraUpdateFactory.zoomTo(16));
 
+        india = new LatLng(MLAT3, MLAN3);
+        googleMap.addMarker(new MarkerOptions()
+                .position(india)
+                .title(String.valueOf(add))
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(india));
+        googleMap.animateCamera(CameraUpdateFactory.zoomTo(16));
+
+        india = new LatLng(MLAT4, MLAN4);
+        googleMap.addMarker(new MarkerOptions()
+                .position(india)
+                .title(String.valueOf(add))
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(india));
+        googleMap.animateCamera(CameraUpdateFactory.zoomTo(16));
         GoogleDirectionsMap googleDirectionsMap = new GoogleDirectionsMap.Builder(this)
                 .setDestinationLatLan(getString(MLAT1, MLAN1))
                 .setSourceLatLan(getString(MLAT2, MLAN2))

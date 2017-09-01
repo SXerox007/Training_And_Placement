@@ -23,7 +23,7 @@ import me.relex.circleindicator.CircleIndicator;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class TutorialActivity extends BaseActivity {

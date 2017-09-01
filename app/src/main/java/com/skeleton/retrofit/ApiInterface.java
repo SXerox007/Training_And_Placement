@@ -2,7 +2,6 @@ package com.skeleton.retrofit;
 
 
 import com.google.gson.JsonObject;
-import com.skeleton.model.fileuploadresponse.FileUploadResponse;
 import com.skeleton.model.modellogin.ResponseLogin;
 import com.skeleton.model.modelsignup.ResponseSignUp;
 import com.skeleton.model.modelsociallogin.ResponseSocialLogin;
@@ -12,7 +11,6 @@ import com.skeleton.util.googledirections.googledirectionmodel.DirectionApiRespo
 import java.util.HashMap;
 import java.util.Map;
 
-import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.FieldMap;
@@ -20,10 +18,8 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.HeaderMap;
-import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.PUT;
-import retrofit2.http.Part;
 import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
 
@@ -200,14 +196,6 @@ public interface ApiInterface {
     Call<CommonParams> addCarDetails(@HeaderMap HashMap<String, String> headerMap
             , @FieldMap HashMap<String, String> map);
 
-    /**
-     * @param language Content_Language
-     * @param file     File Object
-     * @return response
-     */
-    @Multipart
-    @POST(UPLOAD_FILE)
-    Call<FileUploadResponse> uploadImage(@Header(LANGUAGE_CONTENT) String language
-            , @Part MultipartBody.Part file);
+
 }
 
