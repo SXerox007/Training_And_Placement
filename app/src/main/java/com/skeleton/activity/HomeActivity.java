@@ -89,6 +89,9 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
     //Hydrabad
     private static final double MLAT4 = 9.9312;
     private static final double MLAN4 = 76.2673;
+
+    private static final double MLAT5 = 8.0883;
+    private static final double MLAN5 = 77.5385;
     private static final String TAG = "HomeActivity";
     private DrawerLayout drawer;
     private TextView tvTitle;
@@ -373,6 +376,15 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(india));
         googleMap.animateCamera(CameraUpdateFactory.zoomTo(16));
+
+        india = new LatLng(MLAT5, MLAN5);
+        googleMap.addMarker(new MarkerOptions()
+                .position(india)
+                .title(String.valueOf(add))
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(india));
+        googleMap.animateCamera(CameraUpdateFactory.zoomTo(16));
+
         GoogleDirectionsMap googleDirectionsMap = new GoogleDirectionsMap.Builder(this)
                 .setDestinationLatLan(getString(MLAT1, MLAN1))
                 .setSourceLatLan(getString(MLAT2, MLAN2))
