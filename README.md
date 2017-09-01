@@ -1,7 +1,7 @@
 Android Base
 ============
 
-This is android base skelton. Which contains all basic modules i.e used in Click labs.
+This is a Sample Application desiged by Amit Sharma for jusPay as Assignment.
 
 
 
