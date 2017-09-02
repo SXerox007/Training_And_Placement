@@ -8,7 +8,7 @@ import com.skeleton.R;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public final class NetworkUtil {

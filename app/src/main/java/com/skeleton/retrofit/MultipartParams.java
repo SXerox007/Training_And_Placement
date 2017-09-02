@@ -9,7 +9,7 @@ import okhttp3.RequestBody;
 
 /**
  *  +++++++++++++++++++++++++++++++
- *  +++++++++Click labs +++++++++++
+ *  +++++++++Amit labs +++++++++++
  *  +++++++++++++++++++++++++++++++
  */
 public final class MultipartParams {

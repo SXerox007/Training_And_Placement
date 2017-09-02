@@ -10,7 +10,7 @@ import com.skeleton.R;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma+++++++++++
  * +++++++++++++++++++++++++++++++
  **/
 public class TermsConditions extends AppCompatActivity {

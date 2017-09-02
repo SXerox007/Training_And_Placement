@@ -3,7 +3,7 @@ package com.skeleton.constant;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma+++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public interface AppConstant {

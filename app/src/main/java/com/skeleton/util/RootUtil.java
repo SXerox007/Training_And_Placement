@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.InputStreamReader;
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public final class RootUtil {

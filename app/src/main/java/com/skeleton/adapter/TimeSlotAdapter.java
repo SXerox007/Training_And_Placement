@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import static com.skeleton.constant.AppConstant.DURATION_ARRAY;
 
 /**
- * Created by alex on 28/7/17.
+ * Created by Amit Sharma
  */
 
 public class TimeSlotAdapter extends RecyclerView.Adapter<TimeSlotAdapter.TimeVHolder> {

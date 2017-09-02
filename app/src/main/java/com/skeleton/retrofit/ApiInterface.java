@@ -29,7 +29,7 @@ import static com.skeleton.constant.ApiKeyConstant.LANGUAGE_CONTENT;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public interface ApiInterface {

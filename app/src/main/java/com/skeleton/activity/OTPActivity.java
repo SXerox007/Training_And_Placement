@@ -18,7 +18,7 @@ import java.util.Objects;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class OTPActivity extends BaseActivity implements View.OnClickListener {

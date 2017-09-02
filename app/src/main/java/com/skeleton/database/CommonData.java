@@ -9,7 +9,7 @@ import static com.skeleton.constant.AppConstant.DEV;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public final class CommonData implements PaperDbConstant {

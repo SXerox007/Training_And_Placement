@@ -46,7 +46,7 @@ import static android.app.Activity.RESULT_OK;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  **/
 public class SignUpFragment extends BaseFragment {

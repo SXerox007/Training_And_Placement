@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma+++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class PagerAdapter extends FragmentStatePagerAdapter {

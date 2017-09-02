@@ -35,7 +35,7 @@ import java.io.IOException;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * ++++++++Amit Sharma+++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class SplashActivity extends BaseActivity implements FCMTokenInterface, View.OnClickListener {

@@ -12,7 +12,7 @@ import com.skeleton.R;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class ContactUsActivity extends BaseActivity implements View.OnClickListener {

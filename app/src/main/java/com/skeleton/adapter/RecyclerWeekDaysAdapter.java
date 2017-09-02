@@ -17,7 +17,7 @@ import java.util.GregorianCalendar;
 import static com.skeleton.constant.AppConstant.WEEK_DAYS;
 
 /**
- * Created by alex on 28/7/17.
+ *Amit Sharma
  */
 
 public class RecyclerWeekDaysAdapter extends RecyclerView.Adapter<RecyclerWeekDaysAdapter.VHolderWeek> {

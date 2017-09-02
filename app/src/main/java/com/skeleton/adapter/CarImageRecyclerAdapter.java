@@ -23,7 +23,7 @@ import static com.skeleton.constant.AppConstant.NO_VALUE_STRING;
 
 /**
  * +++++++++++++++++++++++++++++++++
- * ++++++++++Click labs ++++++++++++
+ * ++++++++++Amit Sharma ++++++++++++
  * +++++++++++++++++++++++++++++++++
  */
 public final class CarImageRecyclerAdapter extends RecyclerView.Adapter<CarImageRecyclerAdapter.CarImageHolder>

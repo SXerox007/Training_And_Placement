@@ -26,7 +26,7 @@ import com.skeleton.util.dialog.CustomAlertDialog;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class ChangePasswordActivity extends BaseActivity {

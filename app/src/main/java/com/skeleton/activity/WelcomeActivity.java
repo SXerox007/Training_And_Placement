@@ -62,7 +62,7 @@ import io.paperdb.Paper;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma+++++++++++
  * +++++++++++++++++++++++++++++++
  **/
 public class WelcomeActivity extends BaseActivity implements CompoundButton.OnCheckedChangeListener,

@@ -75,7 +75,7 @@ import static com.facebook.R.id.add;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class HomeActivity extends BaseActivity implements DrawerMenuFragment.DrawerMenuClickListener, GoogleDirectionsCallback, DirectionPolylinesCallback

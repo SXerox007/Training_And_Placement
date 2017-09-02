@@ -10,7 +10,7 @@ import com.skeleton.model.calendar.WeekTitle;
 import java.util.ArrayList;
 
 /**
- * Created by alex on 28/7/17.
+ * Created by Amit Sharma
  */
 
 public class WeekFragmentPagerAdapter extends FragmentStatePagerAdapter {

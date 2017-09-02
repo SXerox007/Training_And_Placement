@@ -10,7 +10,7 @@ import com.skeleton.util.currentlocationfetcher.LocationFetcherCallBack;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma+++++++++++
  * +++++++++++++++++++++++++++++++
  */
 

@@ -16,7 +16,7 @@ import com.skeleton.util.Log;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class AddCardActivity extends BaseActivity implements DatePickerDialog.OnDateSetListener, TextWatcher {

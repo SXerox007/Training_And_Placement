@@ -24,7 +24,7 @@ import static com.skeleton.constant.AppConstant.MONTH_NAME;
 import static com.skeleton.constant.AppConstant.TIME_DIFFERENCE;
 
 /**
- * Created by alex on 28/7/17.
+ * Created by Amit Sharma .
  */
 
 public class RecyclerGridViewAdapter extends RecyclerView.Adapter<RecyclerGridViewAdapter.VHolder> {

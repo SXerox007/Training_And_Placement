@@ -7,7 +7,7 @@ import android.view.inputmethod.InputMethodManager;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public final class KeyboardUtil {

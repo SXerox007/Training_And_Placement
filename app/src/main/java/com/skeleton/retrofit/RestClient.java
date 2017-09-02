@@ -28,7 +28,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  *  +++++++++++++++++++++++++++++++
- *  +++++++++Click labs +++++++++++
+ *  +++++++++Amit labs +++++++++++
  *  +++++++++++++++++++++++++++++++
  */
 public final class RestClient {

@@ -12,7 +12,7 @@ import static com.skeleton.constant.AppConstant.REGEX_MOBILE_NUMBER;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public final class ValidateEditText {

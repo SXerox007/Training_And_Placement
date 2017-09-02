@@ -9,7 +9,7 @@ import java.util.TimeZone;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public final class DateTimeUtil {

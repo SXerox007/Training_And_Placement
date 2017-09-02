@@ -15,7 +15,7 @@ import com.skeleton.util.dialog.CustomAlertDialog;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma++++++++++
  * +++++++++++++++++++++++++++++++
  */
 

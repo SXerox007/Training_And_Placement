@@ -15,7 +15,7 @@ import com.skeleton.locationLib.locationroute.RouteUtil;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public final class LocationTracking {

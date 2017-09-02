@@ -10,7 +10,7 @@ import java.io.IOException;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class ImageLatLanTest extends BaseActivity {

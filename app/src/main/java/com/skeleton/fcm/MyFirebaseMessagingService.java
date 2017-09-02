@@ -27,7 +27,7 @@ import static com.skeleton.constant.AppConstant.NOTIFICATION_RECEIVED;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharama  labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class MyFirebaseMessagingService extends FirebaseMessagingService {

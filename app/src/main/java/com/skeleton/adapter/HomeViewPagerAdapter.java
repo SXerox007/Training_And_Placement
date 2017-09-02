@@ -23,7 +23,7 @@ import static com.skeleton.constant.AppConstant.TAB_PROFILE;
 
 /**
  * +++++++++++++++++++++++++++++++++
- * ++++++++++Click labs ++++++++++++
+ * ++++++++++Amit Sharma ++++++++++++
  * +++++++++++++++++++++++++++++++++
  */
 

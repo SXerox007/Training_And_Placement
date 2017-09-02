@@ -36,7 +36,7 @@ import static com.skeleton.util.Util.TEN;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharma +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public abstract class BaseActivity extends AppCompatActivity implements AppConstant, ApiKeyConstant, View.OnClickListener {

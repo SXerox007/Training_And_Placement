@@ -12,7 +12,7 @@ import com.skeleton.locationLib.location.LocationConfig;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 

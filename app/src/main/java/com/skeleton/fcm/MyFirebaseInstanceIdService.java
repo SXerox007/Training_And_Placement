@@ -9,7 +9,7 @@ import com.skeleton.util.Log;
 
 /**
  * +++++++++++++++++++++++++++++++
- * +++++++++Click labs +++++++++++
+ * +++++++++Amit Sharama  labs +++++++++++
  * +++++++++++++++++++++++++++++++
  */
 public class MyFirebaseInstanceIdService extends FirebaseInstanceIdService {
