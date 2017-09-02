@@ -47,6 +47,9 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.skeleton.MyApplication;
 import com.skeleton.R;
+import com.skeleton.fragment.AboutDev;
+import com.skeleton.fragment.AboutUs;
+import com.skeleton.fragment.ContactUs;
 import com.skeleton.fragment.DrawerMenuFragment;
 import com.skeleton.retrofit.APIError;
 import com.skeleton.retrofit.CommonParams;
@@ -217,13 +220,14 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
     /**
      * @param fragment fragment
      */
-    private void replaceFragment(final Fragment fragment) {
+    private void replaceFragment(final Fragment fragment, String tex) {
         FragmentManager fragmentManager;
         FragmentTransaction fragmentTransaction;
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        //fragmentTransaction.replace(R.id.fl_home, fragment);
+        fragmentTransaction.replace(R.id.lala, fragment);
         fragmentTransaction.commit();
+        tvTitle.setText(tex);
     }
 
     private void setGoogleApiClient() {
@@ -242,22 +246,20 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
     public void menuClicked(final int id) {
 
         switch (id) {
-            case R.id.fl_notification:
+            case R.id.aboutus:
+                AboutUs aboutUs = new AboutUs();
+                replaceFragment(aboutUs, "About Us");
                 break;
-            case R.id.fl_schedule:
+            case R.id.aboutdev:
+                AboutDev aboutdev = new AboutDev();
+                replaceFragment(aboutdev, "About Developer");
                 break;
-            case R.id.fl_add_card:
-                startActivity(new Intent(HomeActivity.this, AddCardActivity.class));
+            case R.id.support:
+//                startActivity(new Intent(HomeActivity.this, AddCardActivity.class));
                 break;
-            case R.id.fl_settings:
-                break;
-            case R.id.fl_tutorials:
-                break;
-            case R.id.fl_support:
-                break;
-            case R.id.fl_refer_earn:
-//                replaceFragment(ReferAndEarnFragment.newInstance());
-                tvTitle.setText(R.string.toolbar_title_refer_and_earn);
+            case R.id.contactus:
+                ContactUs contactUs = new ContactUs();
+                replaceFragment(contactUs, "Conatct Us");
                 break;
             case R.id.fl_logout:
                 logout();
@@ -277,7 +279,7 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
     protected void onDestroy() {
         super.onDestroy();
         if (mGoogleApiClient != null) {
-            mGoogleApiClient.stopAutoManage(this);
+            mGoogleApiClient.stopAutoManage(HomeActivity.this);
             mGoogleApiClient.disconnect();
         }
     }
@@ -406,7 +408,7 @@ public class HomeActivity extends BaseActivity implements DrawerMenuFragment.Dra
                 .addConnectionCallbacks(this)
                 .addApi(Places.GEO_DATA_API)
                 .addOnConnectionFailedListener(this)
-                .enableAutoManage(this, this)
+                .enableAutoManage(this, 1, this)
                 .build();
         mGoogleApiClient.connect();
     }

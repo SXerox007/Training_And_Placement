@@ -8,7 +8,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin_normal">
 
         <ImageView
             android:id="@+id/nav_close"
@@ -28,28 +29,6 @@
     </RelativeLayout>
 
 
-    <android.support.v7.widget.ContentFrameLayout
-        android:id="@+id/fl_notification"
-        style="@style/NavMenuItem"
-        android:theme="@style/nav_text">
-
-        <TextView
-            style="@style/nav_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="@string/notification"/>
-
-        <TextView
-            android:id="@+id/tv_notification_counter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|center_vertical"
-            android:layout_marginEnd="60dp"
-            android:background="@drawable/notification_background"
-            android:text="0"/>
-    </android.support.v7.widget.ContentFrameLayout>
-
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -57,23 +36,14 @@
         <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_xxlarge"
             android:orientation="vertical">
 
-            <android.support.v7.widget.ContentFrameLayout
-                android:id="@+id/fl_schedule"
-                style="@style/NavMenuItem">
-
-                <TextView
-                    style="@style/nav_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/schedule"/>
-            </android.support.v7.widget.ContentFrameLayout>
 
             <android.support.v7.widget.ContentFrameLayout
-                android:id="@+id/fl_add_card"
+                android:id="@+id/aboutus"
                 style="@style/NavMenuItem"
+                android:onClick="onClick"
                 android:theme="@style/nav_text">
 
                 <TextView
@@ -81,12 +51,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/text_add_card"/>
+                    android:text="About Us"/>
             </android.support.v7.widget.ContentFrameLayout>
 
             <android.support.v7.widget.ContentFrameLayout
-                android:id="@+id/fl_settings"
+                android:id="@+id/aboutdev"
                 style="@style/NavMenuItem"
+                android:onClick="onClick"
                 android:theme="@style/nav_text">
 
                 <TextView
@@ -94,25 +65,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/settings"/>
+                    android:text="About Developer"/>
             </android.support.v7.widget.ContentFrameLayout>
 
             <android.support.v7.widget.ContentFrameLayout
-                android:id="@+id/fl_tutorials"
+                android:id="@+id/support"
                 style="@style/NavMenuItem"
-                android:theme="@style/nav_text">
-
-                <TextView
-                    style="@style/nav_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/tutorials"/>
-            </android.support.v7.widget.ContentFrameLayout>
-
-            <android.support.v7.widget.ContentFrameLayout
-                android:id="@+id/fl_support"
-                style="@style/NavMenuItem"
+                android:onClick="onClick"
                 android:theme="@style/nav_text">
 
                 <TextView
@@ -124,8 +83,9 @@
             </android.support.v7.widget.ContentFrameLayout>
 
             <android.support.v7.widget.ContentFrameLayout
-                android:id="@+id/fl_refer_earn"
+                android:id="@+id/contactus"
                 style="@style/NavMenuItem"
+                android:onClick="onClick"
                 android:theme="@style/nav_text">
 
                 <TextView
@@ -133,12 +93,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/text_refer_and_earn"/>
+                    android:text="Contact Us"/>
             </android.support.v7.widget.ContentFrameLayout>
 
             <android.support.v7.widget.ContentFrameLayout
                 android:id="@+id/fl_logout"
                 style="@style/NavMenuItem"
+                android:onClick="onClick"
                 android:theme="@style/nav_text">
 
                 <TextView

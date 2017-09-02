@@ -87,4 +87,5 @@
 
     <!--Dialog dimes -->
     <dimen name="dialog_image_size">40dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
 </resources>

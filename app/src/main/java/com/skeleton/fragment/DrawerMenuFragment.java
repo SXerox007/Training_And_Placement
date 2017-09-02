@@ -23,9 +23,10 @@ public class DrawerMenuFragment extends BaseFragment {
     private DrawerMenuClickListener mListener;
     private SwitchCompat switchDutyOn;
     private TextView tvNotificationCount;
-    private ContentFrameLayout flNotification, flSchedule, flAddCard, flSettings, flTutorials;
+    private ContentFrameLayout aboutus, aboutdev, support, contactus, flTutorials;
     private ContentFrameLayout flSupport, flReferEarn, flLogout;
     private ViewGroup lastClicked;
+
     /**
      *
      */
@@ -56,24 +57,17 @@ public class DrawerMenuFragment extends BaseFragment {
         return view;
     }
 
-    private void init(final  View view) {
-        flNotification = (ContentFrameLayout) view.findViewById(R.id.fl_notification);
-        flSchedule = (ContentFrameLayout) view.findViewById(R.id.fl_schedule);
-        flAddCard = (ContentFrameLayout) view.findViewById(R.id.fl_add_card);
-        flSettings = (ContentFrameLayout) view.findViewById(R.id.fl_settings);
-        flTutorials = (ContentFrameLayout) view.findViewById(R.id.fl_tutorials);
-        flSupport = (ContentFrameLayout) view.findViewById(R.id.fl_support);
-        flReferEarn = (ContentFrameLayout) view.findViewById(R.id.fl_refer_earn);
+    private void init(final View view) {
+        aboutus = (ContentFrameLayout) view.findViewById(R.id.aboutus);
+        aboutdev = (ContentFrameLayout) view.findViewById(R.id.aboutdev);
+        support = (ContentFrameLayout) view.findViewById(R.id.support);
+        contactus = (ContentFrameLayout) view.findViewById(R.id.contactus);
         flLogout = (ContentFrameLayout) view.findViewById(R.id.fl_logout);
-        tvNotificationCount = (TextView) view.findViewById(R.id.tv_notification_counter);
-        flNotification.setOnClickListener(this);
-        flSchedule.setOnClickListener(this);
-        flAddCard.setOnClickListener(this);
-        flSettings.setOnClickListener(this);
-        flTutorials.setOnClickListener(this);
-        flSupport.setOnClickListener(this);
-        flReferEarn.setOnClickListener(this);
-        flLogout.setOnClickListener(this);
+        aboutus.setOnClickListener(this);
+        aboutdev.setOnClickListener(this);
+        support.setOnClickListener(this);
+        contactus.setOnClickListener(this);
+
     }
 
 
@@ -110,9 +104,9 @@ public class DrawerMenuFragment extends BaseFragment {
             View view = new View(getActivity());
             view.setBackgroundResource(R.color.white);
             ContentFrameLayout.LayoutParams layoutParams = new ContentFrameLayout.LayoutParams(getActivity().getResources()
-                                                                .getDimensionPixelSize(R.dimen.nav_menu_bar_width)
-                                                                , getActivity().getResources()
-                                                                 .getDimensionPixelSize(R.dimen.nav_menu_bar_height));
+                    .getDimensionPixelSize(R.dimen.nav_menu_bar_width)
+                    , getActivity().getResources()
+                    .getDimensionPixelSize(R.dimen.nav_menu_bar_height));
             layoutParams.gravity = Gravity.CENTER_VERTICAL;
             ((ViewGroup) viewGroup).addView(view, INDICATOR_INDEX, layoutParams);
             lastClicked = (ViewGroup) viewGroup;

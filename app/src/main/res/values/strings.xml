@@ -230,4 +230,6 @@
     <string name="button_decline">Decline</string>
     <string name="curr_loc">Current Location</string>
     <string name="cant_fetch_location">Cant fetch the location</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="contact_us_number">Number</string>
 </resources>
