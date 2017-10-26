@@ -17,6 +17,7 @@ public final class DateTimeUtil {
     private static final int ONE_MIN_IN_MILLISECONDS = 60000;
     private static final String UTC_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
     private static final String LOCAL_FORMAT = "yyyy, dd MMM - hh:mm a";
+    private static final String API_FORMAT = "yyyy-MM-dd";
 
     /**
      * Empty Constructor
@@ -53,4 +54,35 @@ public final class DateTimeUtil {
             return "";
         }
     }
+
+    /**
+     * Method to convert UTC to LOCAL time format
+     *
+     * @param date UTC date
+     * @return local timezone converted date
+     */
+    public static String getDateToDisplay(final Date date) {
+        SimpleDateFormat formattedDate = new SimpleDateFormat(API_FORMAT);
+        return formattedDate.format(date);
+    }
+
+    /**
+     * Method to convert UTC to LOCAL time format
+     *
+     * @param date UTC date
+     * @return local timezone converted date
+     */
+    public static String getAppDate(final String date) {
+        DateFormat f = new SimpleDateFormat(UTC_FORMAT);
+        f.setTimeZone(TimeZone.getTimeZone("UTC"));
+        try {
+            Date d = f.parse(date);
+            DateFormat formatedDate = new SimpleDateFormat("EEE ,dd MMM");
+            return formatedDate.format(d);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            return "";
+        }
+    }
+
 }

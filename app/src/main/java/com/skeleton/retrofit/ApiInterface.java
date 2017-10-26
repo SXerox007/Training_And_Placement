@@ -5,6 +5,7 @@ import com.google.gson.JsonObject;
 import com.skeleton.model.modellogin.ResponseLogin;
 import com.skeleton.model.modelsignup.ResponseSignUp;
 import com.skeleton.model.modelsociallogin.ResponseSocialLogin;
+import com.skeleton.model.raman.DataObj;
 import com.skeleton.util.googledirections.geocodingmodel.GeoCodedApiResponse;
 import com.skeleton.util.googledirections.googledirectionmodel.DirectionApiResponse;
 
@@ -70,6 +71,9 @@ public interface ApiInterface {
     String CHANGE_PASSWORD = API_USER + "/changePassword";
     String ADD_VEHICLE_DETAIL = API_DRIVER + "/addVehicle";
     String SIGN_UP_DRIVER = API_DRIVER + "/registerFromEmail";
+    String GET_DATA = "customer/getData";
+    String UPDATE_DATA = "customer/updateData";
+    String ADD_DATA = "customer/addData";
 
 
     /**
@@ -196,6 +200,27 @@ public interface ApiInterface {
     Call<CommonParams> addCarDetails(@HeaderMap HashMap<String, String> headerMap
             , @FieldMap HashMap<String, String> map);
 
+
+    /**
+     * @return return the response
+     */
+    @GET(GET_DATA)
+    Call<DataObj> getData(@Query("startDate") String date, @Query("uniqueId") String id);
+
+
+    /**
+     * @return return the response
+     */
+    @FormUrlEncoded
+    @PUT(UPDATE_DATA)
+    Call<CommonResponse> updateData(@Header("content-language") String date, @FieldMap HashMap<String, String> stringHashMap);
+
+    /**
+     * @return return the response
+     */
+    @FormUrlEncoded
+    @POST(ADD_DATA)
+    Call<CommonResponse> addData(@Header("content-language") String date, @FieldMap HashMap<String, String> stringHashMap);
 
 }
 

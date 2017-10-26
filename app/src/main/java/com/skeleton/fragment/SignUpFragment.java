@@ -27,15 +27,6 @@ import com.mukesh.countrypicker.CountryPickerListener;
 import com.skeleton.R;
 import com.skeleton.activity.OTPActivity;
 import com.skeleton.activity.TermsConditions;
-import com.skeleton.constant.ApiKeyConstant;
-import com.skeleton.constant.AppConstant;
-import com.skeleton.database.CommonData;
-import com.skeleton.model.modelsignup.ResponseSignUp;
-import com.skeleton.retrofit.APIError;
-import com.skeleton.retrofit.CommonParams;
-import com.skeleton.retrofit.ResponseResolver;
-import com.skeleton.retrofit.RestClient;
-import com.skeleton.retrofit.RetrofitUtils;
 import com.skeleton.util.EditTextUtil;
 import com.skeleton.util.Log;
 import com.skeleton.util.Util;
@@ -228,37 +219,37 @@ public class SignUpFragment extends BaseFragment {
      * sign up API hit
      */
     private void signup() {
-        CommonParams commonParams = new CommonParams.Builder()
-                .add(EMAIL, etEmail.getText().toString().trim())
-                .add(PASSWORD, etPassword.getText().toString().trim())
-                .add(FIRST_NAME, etName.getText().toString().trim())
-                .add(LAST_NAME, etLastName.getText().toString().trim())
-                .add(USER_NAME, etUserName.getText().toString().trim())
-                .add(MOBILE, etMobileNumber.getText().toString().trim())
-                .add(COUNTRY_CODE, tvCountryCode.getText().toString())
-                .add(DEVICE_TOKEN, AppConstant.DEVICE_TYPE)
-                .add(LATITUDE, "12.972442")
-                .add(LONGITUDE, "77.580643")
-                .add(MCNUMBER, "123456")
-                .add(ApiKeyConstant.DEVICE_TYPE, AppConstant.DEVICE_TYPE)
-                .build();
-        RestClient.getApiInterface().signUpDriver(RetrofitUtils.getHeaderMap(false), commonParams.getMap())
-                .enqueue(new ResponseResolver<ResponseSignUp>(getActivity(), true) {
-                    @Override
-                    public void success(final ResponseSignUp responseSignUp) {
-                        CommonData.saveAccessToken("bearer " + responseSignUp.getData().getToken());
-                        Log.e("Error", "bearer " + responseSignUp.getData().getToken());
+//        CommonParams commonParams = new CommonParams.Builder()
+//                .add(EMAIL, etEmail.getText().toString().trim())
+//                .add(PASSWORD, etPassword.getText().toString().trim())
+//                .add(FIRST_NAME, etName.getText().toString().trim())
+//                .add(LAST_NAME, etLastName.getText().toString().trim())
+//                .add(USER_NAME, etUserName.getText().toString().trim())
+//                .add(MOBILE, etMobileNumber.getText().toString().trim())
+//                .add(COUNTRY_CODE, tvCountryCode.getText().toString())
+//                .add(DEVICE_TOKEN, AppConstant.DEVICE_TYPE)
+//                .add(LATITUDE, "12.972442")
+//                .add(LONGITUDE, "77.580643")
+//                .add(MCNUMBER, "123456")
+//                .add(ApiKeyConstant.DEVICE_TYPE, AppConstant.DEVICE_TYPE)
+//                .build();
+//        RestClient.getApiInterface().signUpDriver(RetrofitUtils.getHeaderMap(false), commonParams.getMap())
+//                .enqueue(new ResponseResolver<ResponseSignUp>(getActivity(), true) {
+//                    @Override
+//                    public void success(final ResponseSignUp responseSignUp) {
+//                        CommonData.saveAccessToken("bearer " + responseSignUp.getData().getToken());
+//                        Log.e("Error", "bearer " + responseSignUp.getData().getToken());
                         Intent intent = new Intent(getActivity(), OTPActivity.class);
                         intent.putExtra(MOBILE, etMobileNumber.getText().toString().trim());
-                        startActivity(intent);
-                    }
-
-                    @Override
-                    public void failure(final APIError error) {
-                        new CustomAlertDialog.Builder(getActivity()).setMessage(error.getMessage()).show();
-                    }
-                });
-        Log.e("Error", "Test2");
+//                        startActivity(intent);
+//                    }
+//
+//                    @Override
+//                    public void failure(final APIError error) {
+//                        new CustomAlertDialog.Builder(getActivity()).setMessage(error.getMessage()).show();
+//                    }
+//                });
+//        Log.e("Error", "Test2");
     }
 
 }

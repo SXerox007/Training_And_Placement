@@ -19,22 +19,10 @@ import android.widget.AutoCompleteTextView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.skeleton.BuildConfig;
 import com.skeleton.R;
 import com.skeleton.activity.ForgotPasswordActivity;
 import com.skeleton.activity.HomeActivity;
-import com.skeleton.constant.ApiKeyConstant;
-import com.skeleton.database.CommonData;
-import com.skeleton.model.modellogin.ResponseLogin;
-import com.skeleton.retrofit.APIError;
-import com.skeleton.retrofit.CommonParams;
-import com.skeleton.retrofit.ResponseResolver;
-import com.skeleton.retrofit.RestClient;
-import com.skeleton.retrofit.RetrofitUtils;
-import com.skeleton.util.DateTimeUtil;
-import com.skeleton.util.Log;
 import com.skeleton.util.ValidateEditText;
-import com.skeleton.util.dialog.CustomAlertDialog;
 
 import io.paperdb.Paper;
 
@@ -173,30 +161,31 @@ public class LoginFragment extends BaseFragment {
      * login With Email and Password
      */
     private void login() {
-        Log.d("clab", "utc offset :" + DateTimeUtil.getCurrentZoneOffset());
-        CommonParams.Builder commonBuild = new CommonParams.Builder()
-                .add(PASSWORD, etPassword.getText().toString().trim())
-                .add(DEVICE_TOKEN, CommonData.getFCMToken())
-                .add(ROLE, ROLE_TYPE)
-                .add(APP_VERSION, BuildConfig.VERSION_NAME)
-                .add(ApiKeyConstant.DEVICE_TYPE, APP_TYPE)
-                .add(isLoginByMail ? EMAIL : MOBILE_NUMBER, acEmail.getText().toString().trim());
-        RestClient.getApiInterface().login(RetrofitUtils.getHeaderMap(false), commonBuild.build().getMap())
-                .enqueue(new ResponseResolver<ResponseLogin>(getActivity(), true, false) {
-                    @Override
-                    public void success(final ResponseLogin responseLogin) {
-                        CommonData.saveAccessToken("bearer " + responseLogin.getData().getToken());
-                        Log.e("Error", "bearer " + responseLogin.getData().getToken());
-                        if (checkBox.isChecked()) {
-                            saveLoginInfo();
-                        }
-                        startActivity(new Intent(context, HomeActivity.class));
-                    }
-
-                    @Override
-                    public void failure(final APIError error) {
-                        new CustomAlertDialog.Builder(context).setMessage(error.getMessage()).show();
-                    }
-                });
+//        Log.d("clab", "utc offset :" + DateTimeUtil.getCurrentZoneOffset());
+//        CommonParams.Builder commonBuild = new CommonParams.Builder()
+//                .add(PASSWORD, etPassword.getText().toString().trim())
+//                .add(DEVICE_TOKEN, CommonData.getFCMToken())
+//                .add(ROLE, ROLE_TYPE)
+//                .add(APP_VERSION, BuildConfig.VERSION_NAME)
+//                .add(ApiKeyConstant.DEVICE_TYPE, APP_TYPE)
+//                .add(isLoginByMail ? EMAIL : MOBILE_NUMBER, acEmail.getText().toString().trim());
+//        RestClient.getApiInterface().login(RetrofitUtils.getHeaderMap(false), commonBuild.build().getMap())
+//                .enqueue(new ResponseResolver<ResponseLogin>(getActivity(), true, false) {
+//                    @Override
+//                    public void success(final ResponseLogin responseLogin) {
+//                        CommonData.saveAccessToken("bearer " + responseLogin.getData().getToken());
+//                        Log.e("Error", "bearer " + responseLogin.getData().getToken());
+//                        if (checkBox.isChecked()) {
+//                            saveLoginInfo();
+//                        }
+        startActivity(new Intent(context, HomeActivity.class));
+//                    }
+//
+//                    @Override
+//                    public void failure(final APIError error) {
+//                        new CustomAlertDialog.Builder(context).setMessage(error.getMessage()).show();
+//                    }
+//                });
+//    }
     }
 }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_light"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin_xlarge"
+        android:src="@drawable/logo_2"/>
+
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/tvHome"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:onClick="onClick"-->
+    <!--android:padding="@dimen/padding_large"-->
+    <!--android:text="HOME"-->
+    <!--android:textSize="@color/black"/>-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/nevigate"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:onClick="onClick"-->
+    <!--android:padding="@dimen/padding_large"-->
+    <!--android:text="NAVIGATE TO CHITKARA"-->
+    <!--android:textSize="@color/black"/>-->
+
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/contactus"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:onClick="onClick"-->
+    <!--android:padding="@dimen/padding_large"-->
+    <!--android:text="contact us"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textSize="@color/black"/>-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/developer"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:onClick="onClick"-->
+    <!--android:padding="@dimen/padding_large"-->
+    <!--android:text="DEVELOPERS"-->
+    <!--android:textSize="@color/black"/>-->
+
+    <!--<android.support.v7.widget.AppCompatTextView-->
+    <!--android:id="@+id/lgout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="?attr/selectableItemBackground"-->
+    <!--android:onClick="onClick"-->
+    <!--android:padding="@dimen/padding_large"-->
+    <!--android:text="Logout"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textSize="@color/black"/>-->
+
+
+</LinearLayout>

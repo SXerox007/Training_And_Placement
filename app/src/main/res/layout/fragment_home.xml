@@ -1,9 +1,17 @@
-<android.support.v7.widget.LinearLayoutCompat
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_white"
+    android:background="@color/black"
     tools:context="com.skeleton.fragment.HomeFragment">
 
-</android.support.v7.widget.LinearLayoutCompat>
+    <com.phlox.datepick.CalendarPickerView
+        android:id="@+id/datePicker"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>

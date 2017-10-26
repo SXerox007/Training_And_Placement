@@ -161,8 +161,8 @@
     <string name="text_password_updated">Password Updated</string>
     <string name="text_otp_send">OTP send Successfully</string>
     <string name="text_success">success</string>
-     <string name="text_available">Available</string>
-     <string name="instruction">Your Calendar think you are unavailable.\nTo make yourself available for booking.\nPlease tap on time slot or day</string>
+    <string name="text_available">Available</string>
+    <string name="instruction">Your Calendar think you are unavailable.\nTo make yourself available for booking.\nPlease tap on time slot or day</string>
 
     <!--Max Length-->
     <string name="max_length_Card_Details">19</string>

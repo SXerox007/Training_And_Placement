@@ -47,6 +47,7 @@
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
@@ -93,6 +94,8 @@
         <activity android:name=".activity.CarDetailActivity">
         </activity>
         <activity android:name=".activity.TermsConditions"/>
+        <activity android:name=".activity.GetSetTaskActivity">
+        </activity>
     </application>
 
 </manifest>

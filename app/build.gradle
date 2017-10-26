@@ -53,7 +53,7 @@ android {
             buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
         }
         DEV {
-            buildConfigField 'String', 'BASE_URL', '"https://dev-juggernaut.clicklabs.in/"'
+            buildConfigField 'String', 'BASE_URL', '"http://13.229.62.144:3001/"'
             buildConfigField 'boolean', 'WATER_MARK', 'true'
             buildConfigField 'boolean', 'IS_UNIVERSAL', 'false'
             buildConfigField 'String', 'BUILD_SERVER_TYPE', '"Dev"'
@@ -170,6 +170,7 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'com.jakewharton.rxbinding:rxbinding:0.3.0'
     compile 'com.trello:rxlifecycle:0.4.0'
+    compile 'com.phlox.widget:android-date-picker:0.2.1'
     compile 'com.trello:rxlifecycle-components:0.4.0'
     compile 'com.google.android.gms:play-services-auth:11.0.1'
     compile 'com.matthew-tamlin:sliding-intro-screen:3.0.2'

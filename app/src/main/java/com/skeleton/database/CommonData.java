@@ -2,6 +2,7 @@ package com.skeleton.database;
 
 import com.skeleton.BuildConfig;
 import com.skeleton.constant.PaperDbConstant;
+import com.skeleton.model.raman.DataObj;
 
 import io.paperdb.Paper;
 
@@ -160,4 +161,13 @@ public final class CommonData implements PaperDbConstant {
     /*If there is no default server saved, return default server from configuration.*/
         Paper.book().write(KEY_APP_TYPE, type);
     }
+
+    public static void savaData(final DataObj commonParams) {
+        Paper.book().write("ramna", commonParams);
+    }
+
+    public static DataObj getData() {
+        return Paper.book().read("ramna");
+    }
 }
+
