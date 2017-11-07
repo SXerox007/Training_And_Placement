@@ -27,12 +27,16 @@ public class VideoLec extends BaseFragment {
         return view;
     }
 
+    /**
+     * init
+     * @param view view
+     */
     private void init(View view) {
         tut1 = (LinearLayout) view.findViewById(R.id.tut1);
         tut1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                startActivity(new Intent(context, YouTube.class).putExtra("url", "PLAE85DE8440AA6B83")
+                startActivity(new Intent(context, YouTube.class).putExtra("url","PLAE85DE8440AA6B83")
                         .putExtra("des", getResources().getString(R.string.des)));
             }
         });
