@@ -65,4 +65,36 @@ public class Detail {
     public int getV() {
         return v;
     }
+
+    public void setId(final String id) {
+        this.id = id;
+    }
+
+    public void setUpdatedAt(final String updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public void setCreatedAt(final String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
+
+    public void setText(final String text) {
+        this.text = text;
+    }
+
+    public void setUniqueId(final int uniqueId) {
+        this.uniqueId = uniqueId;
+    }
+
+    public void setStartDate(final String startDate) {
+        this.startDate = startDate;
+    }
+
+    public void setV(final int v) {
+        this.v = v;
+    }
 }

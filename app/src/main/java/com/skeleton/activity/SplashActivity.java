@@ -219,7 +219,7 @@ public class SplashActivity extends BaseActivity implements FCMTokenInterface, V
             }
             //Runtime.getRuntime().freeMemory();
         }
-        startActivity(new Intent(this, TutorialActivity.class));
+        startActivity(new Intent(this, HomeActivity.class));
     }
 
     @Override

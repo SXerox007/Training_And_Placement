@@ -96,6 +96,8 @@
         <activity android:name=".activity.TermsConditions"/>
         <activity android:name=".activity.GetSetTaskActivity">
         </activity>
+        <activity android:name=".activity.YouTube">
+        </activity>
     </application>
 
 </manifest>

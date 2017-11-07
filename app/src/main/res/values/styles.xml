@@ -177,4 +177,16 @@
         <item name="android:textColor">@color/black_new</item>
         <item name="android:padding">@dimen/padding_normal</item>
     </style>
+
+    <style name="drawer_text_view">
+        <item name="android:drawablePadding">@dimen/padding_large</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/padding_normal</item>
+        <item name="android:paddingStart">@dimen/margin_xxlarge</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/button_selector_primary_color</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
 </resources>

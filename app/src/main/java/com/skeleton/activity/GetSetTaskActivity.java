@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.skeleton.R;
 import com.skeleton.adapter.RamanAdapter;
@@ -19,6 +20,7 @@ import com.skeleton.retrofit.ResponseResolver;
 import com.skeleton.retrofit.RestClient;
 import com.skeleton.util.StringUtil;
 import com.skeleton.util.customview.MaterialEditText;
+import com.skeleton.util.dialog.CustomAlertDialog;
 
 public class GetSetTaskActivity extends BaseActivity {
 
@@ -29,6 +31,7 @@ public class GetSetTaskActivity extends BaseActivity {
     private LinearLayout llScreen1, llScreen2;
     private String date, id;
     private boolean isNew;
+    private DataObj dataObj;
 
 
     @Override
@@ -49,11 +52,37 @@ public class GetSetTaskActivity extends BaseActivity {
             tvHeading.setText("Welcome");
             tvId.setText(id);
         } else {
-            DataObj dataObj = CommonData.getData();
-            tvHeading.setText(StringUtil.toCamelCase(dataObj.getData().get(0).getName()));
-            ramanAdapter.setData(dataObj.getData());
+            hit();
         }
 
+    }
+
+    /**
+     * hit to get data
+     */
+    private void hit() {
+        try {
+            id = String.valueOf(CommonData.getData().getData().get(0).getUniqueId());
+        } catch (Exception ignored) {
+
+        }
+
+        RestClient.getApiInterface().getData(date, id).enqueue(new ResponseResolver<DataObj>() {
+            @Override
+            public void success(DataObj dataObj) {
+                CommonData.savaData(dataObj);
+                dataObj = CommonData.getData();
+                tvHeading.setText(StringUtil.toCamelCase(dataObj.getData().get(0).getName()));
+                ramanAdapter.setData(dataObj.getData());
+                llScreen1.setVisibility(View.VISIBLE);
+                llScreen2.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void failure(final APIError error) {
+
+            }
+        });
     }
 
     private void init() {
@@ -80,14 +109,27 @@ public class GetSetTaskActivity extends BaseActivity {
             case R.id.save:
                 addTaskApiHit();
                 break;
+            case R.id.Add:
+                setScreenData();
+                llScreen2.setVisibility(View.VISIBLE);
+                break;
             default:
         }
+    }
+
+    private void setScreenData() {
+        dataObj = CommonData.getData();
+        name.setText(StringUtil.toCamelCase(dataObj.getData().get(0).getName()));
+        name.setKeyListener(null);
+        tvId.setText(String.valueOf(dataObj.getData().get(0).getUniqueId()));
+        tvId.setKeyListener(null);
     }
 
     /**
      * Api hit to add task for the selected date
      */
     private void addTaskApiHit() {
+        id = tvId.getText().toString();
         CommonParams params = new CommonParams.Builder()
                 .add("startDate", date)
                 .add("name", name.getText().toString())
@@ -98,17 +140,27 @@ public class GetSetTaskActivity extends BaseActivity {
                     @Override
                     public void success(final CommonResponse commonResponse) {
                         DataObj dataObj = commonResponse.toResponseModel(DataObj.class);
-//                        tvHeading.setText(StringUtil.toCamelCase(dataObj.getData().get(0).getName()));
-                        ramanAdapter.setData(dataObj.getData());
-                        llScreen1.setVisibility(View.VISIBLE);
-                        llScreen2.setVisibility(View.GONE);
+                        Toast.makeText(GetSetTaskActivity.this, "Added", Toast.LENGTH_SHORT).show();
+                        hit();
 
                     }
 
                     @Override
                     public void failure(final APIError error) {
+                        showAlertDialog(error.getMessage());
 
                     }
                 });
+    }
+
+    /**
+     * @param msg of alert dialog
+     */
+    private void showAlertDialog(final String msg) {
+        new CustomAlertDialog.Builder(GetSetTaskActivity.this)
+                .setMessage(msg)
+                .setPositiveButton(R.string.text_ok, null)
+                .show();
+
     }
 }

@@ -232,4 +232,13 @@
     <string name="cant_fetch_location">Cant fetch the location</string>
     <string name="phone_number">Phone Number</string>
     <string name="contact_us_number">Number</string>
+    <string name="home">Home</string>
+    <string name="booking">Way to Chitkara</string>
+    <string name="notifications">Video Lectures</string>
+    <string name="help">About Developers</string>
+    <string name="logout">Logout</string>
+    <string name="you_are_looking_for_which_subject_lectures_please_select">You are looking for which subject lectures please select</string>
+    <string name="des">C is an imperative procedural language. It was designed to be compiled using a relatively straightforward compiler, to provide low-level access to memory, to provide language constructs that map efficiently to machine instructions, and to require minimal run-time support. Despite its low-level capabilities, the language was designed to encourage cross-platform programming. A standards-compliant and portably written C program can be compiled for a very wide variety of computer platforms and operating systems with few changes to its source code. The language has become available on a very wide range of platforms, from embedded microcontrollers to supercomputers.</string>
+    <string name="player_error">Error ocuured</string>
+    <string name="press_again_to_exit">Press again to exit</string>
 </resources>

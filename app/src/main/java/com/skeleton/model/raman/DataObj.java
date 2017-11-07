@@ -23,6 +23,18 @@ public class DataObj {
     public List<Detail> getData() {
         return data;
     }
+
+    public void setStatusCode(final int statusCode) {
+        this.statusCode = statusCode;
+    }
+
+    public void setMessage(final String message) {
+        this.message = message;
+    }
+
+    public void setData(final List<Detail> data) {
+        this.data = data;
+    }
 }
 
 

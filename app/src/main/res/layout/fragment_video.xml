@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_normal"
+        android:text="@string/you_are_looking_for_which_subject_lectures_please_select"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_xlarge"/>
+
+    <LinearLayout
+        android:id="@+id/tut1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_x_large"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C++"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Data Structure"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Java"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tut2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_x_large"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C++"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Data Structure"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Java"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tut3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_x_large"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C++"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Data Structure"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Java"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tut4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_x_large"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="C++"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Data Structure"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="Java"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/font_xlarge"/>
+    </LinearLayout>
+</LinearLayout>
