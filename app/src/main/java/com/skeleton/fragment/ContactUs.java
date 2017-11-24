@@ -16,7 +16,8 @@ public class ContactUs extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable final Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_contatcus, container, false);
-        return view;
+        //View view = inflater.inflate(R.layout.fragment_contatcus, container, false);
+      //  return view;
+        return null;
     }
 }

@@ -51,6 +51,8 @@ public class HomeActivity extends BaseActivity {
                 VideoLec videoLec = new VideoLec();
                 setFragment(videoLec, "Tutorials");
                 break;
+            case R.id.tvLogout:
+                break;
             default:
         }
     }

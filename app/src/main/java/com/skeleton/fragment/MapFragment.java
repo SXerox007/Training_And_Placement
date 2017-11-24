@@ -62,8 +62,8 @@ public class MapFragment extends LocationBaseFragment implements
     private void init(final View view) {
         SupportMapFragment supportMapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map1);
         supportMapFragment.getMapAsync(this);
-        valetIcon = BitmapDescriptorFactory.fromResource(R.drawable.valet_loc);
-        userIcon = BitmapDescriptorFactory.fromResource(R.drawable.meeting_loc);
+        valetIcon = BitmapDescriptorFactory.fromResource(R.drawable.back_arrow);
+        userIcon = BitmapDescriptorFactory.fromResource(R.drawable.back_arrow);
         tvName = (TextView) view.findViewById(R.id.tvName);
         tvETA = (TextView) view.findViewById(R.id.tvETA);
     }

@@ -7,11 +7,11 @@ apply plugin: 'checkstyle'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion '26.0.1'
+    buildToolsVersion '26.0.2'
     /**
      * Define you Project Name here
      */
-    def appName = 'JusPay'
+    def appName = 'Training and Placement'
 
 /**
  *
@@ -20,6 +20,7 @@ android {
     def APP_NAME = '\"' + (System.getenv("APP_NAME") ?: appName) + '\"'
 
     defaultConfig {
+        flavorDimensions "none"
         applicationId "com.skeleton"
         minSdkVersion 19
         targetSdkVersion 25
@@ -31,6 +32,7 @@ android {
         resValue "string", "google_Maps_Api_key", "AIzaSyCE7dfRGcYh3iWEPXHCNyS-LNKhqdFrwHM"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         buildConfigField "String", "GOOGLE_URL", '"https://maps.googleapis.com/maps/api/"'
+        vectorDrawables.useSupportLibrary=true
     }
     buildTypes {
         debug {
@@ -46,6 +48,7 @@ android {
     }
     productFlavors {
         UNIVERSAL {
+            dimension "none"
             buildConfigField 'String', 'BASE_URL', '"https://dev-juggernaut.clicklabs.in/"'
             buildConfigField 'boolean', 'WATER_MARK', 'true'
             buildConfigField 'boolean', 'IS_UNIVERSAL', 'true'
@@ -53,6 +56,7 @@ android {
             buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
         }
         DEV {
+            dimension "none"
             buildConfigField 'String', 'BASE_URL', '"http://13.229.62.144:3001/"'
             buildConfigField 'boolean', 'WATER_MARK', 'true'
             buildConfigField 'boolean', 'IS_UNIVERSAL', 'false'
@@ -60,6 +64,7 @@ android {
             buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
         }
         QA {
+            dimension "none"
             buildConfigField 'String', 'BASE_URL', '"https://test-juggernaut.clicklabs.in/"'
             buildConfigField 'boolean', 'WATER_MARK', 'true'
             buildConfigField 'boolean', 'IS_UNIVERSAL', 'false'
@@ -67,6 +72,7 @@ android {
             buildConfigField 'String', 'GOOGLE_URL', '"https://maps.googleapis.com/"'
         }
         LIVE {
+            dimension "none"
             buildConfigField 'String', 'BASE_URL', '"https://juggernaut.clicklabs.in/"'
             buildConfigField 'boolean', 'WATER_MARK', 'false'
             buildConfigField 'boolean', 'IS_UNIVERSAL', 'false'
@@ -75,14 +81,8 @@ android {
         }
 
 
-        applicationVariants.all { variant ->
-            variant.outputs.each { output ->
-                output.outputFile = new File(output.outputFile.parent,
-                        output.outputFile.name.replace(output.outputFile.name, (appName + "_"
-                                + variant.productFlavors[0].name + "_" + buildType.name + "_v"
-                                + defaultConfig.versionCode).toLowerCase() + ".apk"));
-            }
-        }
+        applicationVariants.all { variant ->    variant.outputs.all {        //Change your application name here of output apk
+            outputFileName = ("Base-${variant.productFlavors[0].name}_${buildType.name}_v${variant.versionCode}.apk").toLowerCase()    }}
     }
 }
 
@@ -95,38 +95,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
 
     })
-    /**
-     *
-     * android development support dependencies
-     */
-    /**
-     *
-     * android FCM dependencies
-     */
-    /**
-     *
-     *  android Map and Location dependencies
-     */
-    /**
-     *
-     * Retrofit dependencies
-     */
-    /**
-     *
-     * To set the fonts dependencies
-     */
-    /**
-     * Paper DB dependencies
-     */
-    /**
-     * Facebook dependencies
-     */
-    /**
-     * Image chooser dependencies
-     */
-    /**
-     * Image Crop dependencies
-     */
+
     /**
      * leakcanary dependencies
      */

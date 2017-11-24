@@ -40,7 +40,7 @@
                     style="@style/primary_button"
                     android:layout_margin="@dimen/margin_normal"
                     android:onClick="onClick"
-                    android:text="Add Another Task"/>
+                    android:text="Add Companies which you want to Participate"/>
             </LinearLayout>
 
             <LinearLayout
@@ -69,15 +69,41 @@
                     android:hint="University Id"
                     android:textColor="@color/black"/>
 
-                <EditText
+                <com.skeleton.util.customview.MaterialEditText
                     android:id="@+id/task"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_margin="@dimen/margin_medium"
-                    android:background="@drawable/rectangle"
-                    android:gravity="start"
-                    android:hint="Enter your task details"
-                    android:padding="@dimen/padding_normal"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:hint="Company Name which you want to apply?"
+                    android:textColor="@color/black"/>
+
+                <com.skeleton.util.customview.MaterialEditText
+                    android:id="@+id/Hobies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:hint="Your Hobbies"
+                    android:textColor="@color/black"/>
+
+                <com.skeleton.util.customview.MaterialEditText
+                    android:id="@+id/tech"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:hint="Technical Participation"
+                    android:textColor="@color/black"/>
+
+                <com.skeleton.util.customview.MaterialEditText
+                    android:id="@+id/interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_large"
+                    android:layout_marginStart="@dimen/margin_large"
+                    android:hint="Interest"
+                    android:textColor="@color/black"/>
 
                 <Button
                     android:id="@+id/save"

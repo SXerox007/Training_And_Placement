@@ -1,6 +1,7 @@
 package com.skeleton.activity;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -104,6 +105,7 @@ public class TutorialActivity extends BaseActivity {
     /**
      * Method to set splash slider
      */
+    @SuppressLint("ClickableViewAccessibility")
     private void setSlider() {
         myPagerAdapter = new com.skeleton.adapter.PagerAdapter(getSupportFragmentManager(), arrayListFragment);
         viewPager.setOffscreenPageLimit(3);
@@ -195,6 +197,7 @@ public class TutorialActivity extends BaseActivity {
             @Override
             public void run() {
                 RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.rl_animate);
+                @SuppressLint("ResourceType")
                 Animation slideUp = AnimationUtils.loadAnimation(TutorialActivity.this, R.animator.slide_up);
                 relativeLayout.startAnimation(slideUp);
             }

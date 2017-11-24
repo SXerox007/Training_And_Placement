@@ -5,13 +5,6 @@
               android:background="@color/colorPrimary"
               android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size_50"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/margin_xlarge"
-        android:src="@drawable/logo_2"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +13,7 @@
         <TextView
             android:id="@+id/tvHome"
             style="@style/drawer_text_view"
-            android:drawableStart="@drawable/home_icon"
+            android:drawableStart="@drawable/ic_directions_car_black_24dp"
             android:onClick="onClick"
             android:text="@string/home"/>
 
@@ -35,28 +28,28 @@
         <TextView
             android:id="@+id/tvChkp"
             style="@style/drawer_text_view"
-            android:drawableStart="@drawable/notifications"
+            android:drawableStart="@drawable/ic_directions_car_black_24dp"
             android:onClick="onClick"
             android:text="Chalkpad"/>
 
         <TextView
             android:id="@+id/TvVideoLec"
             style="@style/drawer_text_view"
-            android:drawableStart="@drawable/notifications"
+            android:drawableStart="@drawable/ic_directions_car_black_24dp"
             android:onClick="onClick"
             android:text="@string/notifications"/>
 
         <TextView
             android:id="@+id/tvAboutUs"
             style="@style/drawer_text_view"
-            android:drawableStart="@drawable/help_icon"
+            android:drawableStart="@drawable/ic_directions_car_black_24dp"
             android:onClick="onClick"
             android:text="@string/help"/>
 
         <TextView
             android:id="@+id/tvLogout"
             style="@style/drawer_text_view"
-            android:drawableStart="@drawable/logout_icon"
+            android:drawableStart="@drawable/ic_directions_car_black_24dp"
             android:onClick="onClick"
             android:text="@string/logout"/>
     </LinearLayout>
